@@ -20,6 +20,11 @@ p{
     margin: 100px;
     border-radius:90%;
     background-color: papayawhip;
+    -webkit-animation-name: example;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
     border: solid orange 8px;
     border: solid orangered 5px;
     border: solid red 2px;
@@ -32,3 +37,9 @@ p{
     font-size: 28px;
     
 }
+
+@keyframes example {
+    from {background-color: papayawhip;}
+    to {background-color: orangered}
+}
+
